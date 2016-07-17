@@ -141,7 +141,7 @@ plot.summary.mpwgaim <- function(x, intervalObj, chr = "qtl",
         ppage <- prow %% 5 + 1
         prow <- 5
     }
-    if(ppage > 1) devAskNewPage(ask=TRUE)
+    if(ppage > 1) devAskNewPage(ask=FALSE)
     if(save.plot) {
         if(is.null(file)) file <- "Rplot.ps"
         trellis.device(postscript, file=file, po=14)
